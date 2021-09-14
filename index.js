@@ -15,9 +15,6 @@ app.use(express.urlencoded({
 
 app.listen(port, () => console.log(`Listening on port ${port}`));
 
-app.get('/', (req, res) => {
-    res.send('your express backend is connected to react');
-})
 
 app.use('/posts', postRoutes);
 
