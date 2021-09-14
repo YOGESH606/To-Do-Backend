@@ -13,7 +13,9 @@ app.use(express.urlencoded({
     extended: true
 }));
 
-app.listen(port, () => console.log(`Listening on port ${port}`));
+app.get('/',(req,res)=>{
+    res.send('req received suceesfylly')
+})
 
 
 app.use('/posts', postRoutes);
